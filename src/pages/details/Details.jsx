@@ -47,8 +47,8 @@ const Details = () => {
   }
 
   return (
-    <div className="py-10 flex justify-evenly gap-5">
-      <div className="h-96 overflow-hidden rounded-xl">
+    <div className="py-10 flex flex-col md:flex-row justify-evenly gap-5">
+      <div className="md:h-96 h-50 overflow-hidden rounded-xl">
         <img
           className="w-full h-full objext-cover block"
           src={recipeDetails?.recipe?.image_url}
