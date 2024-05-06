@@ -48,14 +48,14 @@ const Details = () => {
 
   return (
     <div className="py-10 flex flex-col md:flex-row justify-evenly gap-5">
-      <div className="md:h-96 h-50 overflow-hidden rounded-xl">
+      <div className=" md:h-96 h-60 overflow-hidden rounded-xl">
         <img
           className="w-full h-full objext-cover block"
           src={recipeDetails?.recipe?.image_url}
           alt=""
         />
       </div>
-      <div className="flex flex-col gap-3 text-left">
+      <div className="flex flex-col w-1/2 px-3 gap-3 text-left">
         <h1 className="text-2xl font-bold truncate">
           {recipeDetails?.recipe?.title}
         </h1>
@@ -67,7 +67,7 @@ const Details = () => {
             addToFavorites(recipeDetails?.recipe);
             setClicked(!clicked);
           }}
-          className="text-white bg-black p-3 w-1/2 rounded-lg"
+          className="text-white bg-black p-3 w-2/5 font-semibold rounded-lg"
         >
           {favoritesList &&
           favoritesList.length &&
